@@ -1,0 +1,55 @@
+```
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 手机端适配，扫码打开自动适配手机屏幕 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>非遗展品视频</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            padding: 20px;
+            background-color: #f5f5f5;
+            font-family: system-ui;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        video {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .tip {
+            margin-top:16px;
+            color:#666;
+            font-size:14px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- ========== 修改这里的src为你的视频直链 ========== -->
+        <video controls preload="metadata">
+            <source src="https://img.remit.ee/i/cZj7fqFdlkJe" type="video/mp4">
+            你的浏览器不支持播放视频，请更换浏览器。
+        </video>
+        <p class="tip">扫码观看非遗展品介绍视频</p>
+    </div>
+</body>
+</html>
+```
